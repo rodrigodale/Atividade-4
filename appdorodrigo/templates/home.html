@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 {% load static %}
+{% csrf_token %}
+
 <html>
 
 <head>
@@ -18,6 +20,12 @@
 </head>
 
 <body>
+
+{% if request.user.is_authenticated %}
+    <b>Bem-vindo, {{request.user.username}}</b> <br> 
+    <a href="/users/logout">Sair</a>
+  {% endif %}
+  
 <h1 style="text-align: center;">As melhores paisagens do Rio de Janeiro</h1> 
 <h4>Por: Rodrigo Dale</h4>
   
