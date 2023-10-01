@@ -27,10 +27,10 @@ if SECRET_KEY is None:
     print(
         "Please setup a SECRET_KEY in the Secrets (Environment variables) tab. See README.md for more."
     )
-    exit(1)
+    
 
-  print("Please setup a SECRET_KEY in the Secrets (Environment variables) tab. See README.md for more.")
-  exit(1)
+    print("Please setup a SECRET_KEY in the Secrets (Environment variables) tab. See README.md for more.")
+  
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -115,9 +115,9 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME':
         'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
-]
 
 
+    {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
     },
     {
