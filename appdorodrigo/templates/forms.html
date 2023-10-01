@@ -1,0 +1,26 @@
+<h1>{{ action }} Paisagem</h1>
+
+<form method="post">
+  {% csrf_token %}
+  <div>
+    <label>Nome da Paisagem:</label>
+    <input name="paisagem" value="{{paisagem.nome_da_paisagem}}">
+  </div>
+
+  <div>
+    <label>Localizacao:</label>
+    <input name="localizacao" value="{{paisagem.localizacao}}">
+  </div>
+
+  <div>
+    <label>Clima:</label>
+    <input name="clima" value="{{paisagem.clima}}">
+  </div>
+
+  <div>
+    <label>Altitude:</label>
+    <input name="altitude" value="{{paisagem.altitude}}">
+  </div>
+
+  <input type="submit" value="Registrar">
+</form>

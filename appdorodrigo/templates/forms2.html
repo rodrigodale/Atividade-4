@@ -1,0 +1,26 @@
+<h1>{{action}} Curiosidade</h1>
+
+<form method="post">
+  {% csrf_token %}
+  <div>
+    <label>Nome da Paisagem:</label>
+    <input name="nome_da_paisagem" value="{{curiosidade.nome_da_paisagem}}">
+  </div>
+
+  <div>
+    <label>frequencia:</label>
+    <input name="frequencia" value="{{curiosidade.frequencia}}">
+  </div>
+
+  <div>
+    <label>Prioridade de Visita:</label>
+    <input name="prioridade_de_visita" value="{{curiosidade.prioridade_de_visita}}">
+  </div>
+
+  <div>
+    <label>Categoria:</label>
+    <input name="categoria" value="{{curiosidade.categoria}}">
+  </div>
+
+  <input type="submit" value="Registrar">
+</form>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>RODRIGO BARROS PERILLIER DALE</title>
+  <link href="{% static 'appdorodrigo/css/style.css' %}" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  
+</head>
+
+<body>
+<h1 style="text-align: center;">As melhores paisagens do Rio de Janeiro</h1> 
+<h4>Por: Rodrigo Dale</h4>
+  
+  <br>
+<p style="text-align: justify;">
+  <b><em>Bem-vindo ao meu website dedicado às paisagens mais impressionantes que o Rio de Janeiro tem a oferecer. Meu nome é Rodrigo Dale, e este espaço é uma plataforma onde compartilho minha paixão pela captura da beleza natural e urbana desta cidade única. Ao longo deste site, você encontrará uma coleção cuidadosamente selecionada de fotografias que retratam as diversas facetas do Rio de Janeiro - desde as praias deslumbrantes até os pontos de vista panorâmicos das montanhas majestosas. Convido você a explorar cada imagem e a mergulhar na atmosfera singular que esta cidade exala. Minha intenção é proporcionar uma perspectiva visual que celebra a estética carioca de maneira autêntica e inspiradora. Seja bem-vindo a esta jornada fotográfica e espero que as imagens despertem em você a mesma admiração que sinto ao testemunhar esses cenários inesquecíveis através da minha galeria de imagens.</em></b></p> 
+<br>
+  <div>
+  <img 
+  src="https://free4kwallpapers.com/uploads/originals/2015/10/24/rio-de-janeiro.jpg" width="1000"></div>
+  <br>
+<p style="text-align: justify;">
+  Voltando à nossa exploração visual, chegou a hora de mergulhar mais fundo nas paisagens que fazem do Rio de Janeiro um lugar único. Nesta seção de classificação, apresento uma seleção das paisagens mais marcantes que tive o prazer de capturar na cidade. Desde o Cristo Redentor e o Pão de Açúcar até Copacabana e a Pedra da Gávea, cada imagem conta uma história especial. Convido você a explorar essa lista, onde cada foto é uma janela para a essência da Cidade Maravilhosa. Espero que essas imagens transmitam a beleza e o encanto que eu experimentei ao capturar esses momentos. Aproveite essa jornada pelas maravilhas naturais e urbanas do Rio de Janeiro.
+
+<br><br>
+  Neste <a href="https://www.showmetech.com.br/melhores-pontos-turisticos-rio-de-janeiro/"target="_blank"rel="noopener noreferrer">link</a>, estão alguns outros pontos turísticos da cidade, que também possuem paisagens deslumbrantes.</p> 
+
+  <h2>Ranking das paisagens:</h2>
+<!--
+<ol>
+<li><b>Cristo Redentor</b></li>
+  <br> 
+  <img 
+  src="https://images7.alphacoders.com/359/359867.jpg" width="700">
+  <br>
+  <i>A icônica estátua do Cristo Redentor, situada no topo do morro do Corcovado, oferece uma vista panorâmica deslumbrante da cidade e é um símbolo mundialmente reconhecido.</i>
+  <br>
+  <br>
+  <li><b>Pão de Açúcar</b></li>
+  <br>
+  <img 
+  src="https://img.freepik.com/fotos-premium/vista-do-pao-de-acucar-no-rio-de-janeiro_538646-10860.jpg" width="700">
+  <br>
+  <i>O complexo de morros do Pão de Açúcar é outra vista imperdível, proporcionando uma perspectiva única da Baía de Guanabara e das praias cariocas.</i>
+  <br>
+  <br>
+  <li><b>Praias de Copacabana e Ipanema</b></li>
+  <br>
+  <img 
+  src="https://i.pinimg.com/originals/a0/56/c2/a056c2f49e904dce30495798dbcb3393.jpg" width="700">
+  <br>
+  <i>As praias de Copacabana e Ipanema são famosas por suas areias douradas e águas azuis, além de oferecerem um ambiente vibrante com coqueiros, quiosques e pessoas aproveitando o sol.</i>
+  <br>
+  <br>
+  <li><b>Pedra da Gávea</b></li>
+  <br>
+  <img 
+  src="https://images.squarespace-cdn.com/content/v1/598b7343f7e0abaa677c5fd8/1577050619008-VZKL6DITBVRQ42CRGJ0H/trilha-rio-de-janeiro-brasil-pedra-da-gavea-4.jpg?format=2500w" width="700">
+  <br>
+  <i>Esta montanha colossal oferece vistas panorâmicas inesquecíveis da cidade, combinando a majestade da natureza com a energia urbana do Rio.</i>
+  <br>
+  <br>
+  <li><b>Lagoa Rodrigo de Freitas</b></li>
+  <br>
+  <img 
+  src="https://live.staticflickr.com/7096/7305190868_61f30b620e_b.jpg" width="700">
+  <br>
+  <i>Um refúgio tranquilo no coração da cidade, a Lagoa Rodrigo de Freitas é um espelho d'água cercado por áreas verdes, trilhas e ciclovia, proporcionando uma atmosfera serena e belas paisagens.</i>
+</ol>
+-->
+<ol>
+{% for paisagem in paisagens %}
+  <li>
+    {{ paisagem.nome_da_paisagem}}<a href="/nome_da_paisagem/update/{{paisagem.id}}"> Atualizar</a>
+    <a href="/nome_da_paisagem/delete/{{paisagem.id}}"> Remover</a>
+  </li>
+{% endfor %}  
+</ol>
+
+<a href = "/nome_da_paisagem">Adicionar nova paisagem<a/>
+  
+<br>
+<h3>Algumas curiosidades sobre estas paisagens encantadoras:</h3>
+
+<!--  
+  <ul>
+<li><u>Cristo Redentor</u>: A estátua do Cristo Redentor foi inaugurada em 1931 e é feita de concreto e pedra-sabão. O projeto original incluía a ideia de uma cruz nas mãos do Cristo, mas ela foi substituída por uma esfera que simboliza o mundo.</li><br>
+    <li><u>Pão de açúcar</u>: Antes de se tornar uma atração turística famosa, o Pão de Açúcar foi usado como pedreira para a construção de calçadas no Rio de Janeiro. A primeira pessoa a escalar o Pão de Açúcar foi o alpinista suíço Walter Bonatti, em 1957.</li><br>
+    <li><u>Praias de Ipanema e Copacabana</u>: A música "Garota de Ipanema" foi composta por Tom Jobim e Vinícius de Moraes em 1962, inspirada na beleza das mulheres que frequentavam a praia de Ipanema. A canção se tornou um dos hinos da bossa nova.</li><br>
+    <li><u>Pedra da Gávea</u>: A Pedra da Gávea é conhecida por ter uma formação rochosa que se assemelha a um rosto humano. Muitos acreditam que seja uma escultura natural, enquanto outros creem que tenha sido esculpida por povos antigos.</li><br>
+    <li><u>Lagoa Rodrigo de Freitas</u>: A lagoa já foi usada como local de provas de remo durante os Jogos Olímpicos de 2016. Além disso, ela é conhecida por sediar diversos eventos esportivos e competições de remo e vela ao longo do ano.</li>
+  </ul> 
+  -->
+  <ul>
+{% for curiosidade in curiosidades %}
+  <li>
+    {{ curiosidade.nome_da_paisagem}}<a href="/curiosidade/update/{{curiosidade.id}}"> Atualizar</a>
+<a href="/curiosidade/delete/{{curiosidade.id}}"> Remover</a>
+  </li>
+{% endfor %}
+    
+  </ul>
+
+  <a href = "/curiosidade">Adicionar nova curiosidade<a/>
+    
+<h4>Agora veja uma tabela com a nota para cada uma das paisagens listadas</h4>
+  <h3>Tabela de notas:</h3>
+  <table>
+    <thead>
+        <tr>
+            <th>Local</th>
+            <th>Nota</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Cristo Redentor</td>
+            <td>9,5</td>
+        </tr>
+        <tr>
+            <td>Pão de Açúcar</td>
+            <td>9,0</td>
+        </tr>
+        <tr>
+            <td>Praias de Copacabana e Ipanema</td>
+            <td>10</td>
+        </tr>
+      <tr>
+            <td>Pedra da Gávea</td>
+            <td>10</td>
+        </tr>
+      <tr>
+            <td>Lagoa Rodrigo de Freitas</td>
+            <td>9,5</td>
+        </tr>
+    </tbody>
+</table>
+
+  <br>
+  <br>
+</body>
+
+</html>

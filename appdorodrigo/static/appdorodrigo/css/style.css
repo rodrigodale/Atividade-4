@@ -1,0 +1,18 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+div{
+  text-align:center;}
+
+table,th,td{
+  border:1px solid;}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  background-color:#e5f3ff
+}
+
+h2,h3,h4{
+  font-family: 'Kanit', sans-serif;
+}
