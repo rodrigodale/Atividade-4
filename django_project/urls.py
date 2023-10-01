@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+
 from appdorodrigo import views
 
 urlpatterns = [
@@ -28,4 +29,5 @@ path('nome_da_paisagem/delete/<id>',views.delete_paisagem),
       path('curiosidade/delete/<id>',views.delete_curiosidade),
   
     path('admin/', admin.site.urls)
+
 ]
